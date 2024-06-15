@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
 
   getEmployeeList() {
-    fetch('https://atsbackend-715n.onrender.com/applicant')
+    fetch('https://atsbackend-j54j.onrender.com/applicant')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -134,7 +134,7 @@ export class AppComponent implements OnInit {
   
    
 
-  const res= await fetch(`https://atsbackend-715n.onrender.com/applicant/${id}`, {
+  const res= await fetch(`https://atsbackend-j54j.onrender.com/applicant/${id}`, {
         method: 'DELETE'
     });
         if (!res.ok) {

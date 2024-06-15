@@ -50,7 +50,7 @@ async  onFormSubmit() {
     if (this.empForm.valid) {
       if (this.data) {
 console.log(this.data,this.empForm.value)
-    fetch(`https://atsbackend-715n.onrender.com/applicant/${this.empForm.value.id}`, {
+    fetch(`https://atsbackend-j54j.onrender.com/applicant/${this.empForm.value.id}`, {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ console.log(this.data,this.empForm.value)
 
       } else {
         if (this.empForm.valid) {
-          const res=await fetch("https://atsbackend-715n.onrender.com/applicant/", {
+          const res=await fetch("https://atsbackend-j54j.onrender.com/applicant", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
